@@ -6,9 +6,10 @@ body, html {
 }
 
 .about-me-section {
+    position : fixed;
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
     align-items: center;
     justify-content: center;
@@ -24,7 +25,7 @@ body, html {
 }
 
 .image-container {
-    height: 1100px;
+    height: 800px;
     flex: 1;
     min-width: 300px;
     padding: 20px;

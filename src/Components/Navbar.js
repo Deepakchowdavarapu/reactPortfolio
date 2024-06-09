@@ -20,9 +20,11 @@ function Navbar() {
       </div> */}
 
       <div className="navbar-logo">
-        <h1>PORTFOLIO</h1>
+
+        <h1>Deepak PORTFOLIO</h1>
         </div>
       <ul className="navbar-list">
+
         <li className="navbar-item" onClick={hideMenu}>
           <Link to="/">
             <AiOutlineHome /> Home
