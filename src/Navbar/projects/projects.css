@@ -1,0 +1,40 @@
+#total{
+  height : 40vh;
+  text-align: center;
+  padding: 20px;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+
+}
+
+.project-card{
+    width: 20vw;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: gainsboro;
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img{
+  width: 250px;
+  height: 250px;
+}

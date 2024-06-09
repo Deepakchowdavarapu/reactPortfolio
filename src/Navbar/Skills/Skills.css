@@ -1,0 +1,34 @@
+#stats{
+    display : flex;
+   flex-direction: column;
+    height : 60vh;
+    /* width : 100vw; */
+    /* align-items: center; */
+    /* left : 20px; */
+    justify-content: center;
+    /* padding: 20px; */
+    /* box-sizing: border-box; */
+}
+
+#Total {
+    height : 40vh;
+    text-align: center;
+    padding: 20px;
+}
+
+#icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#icons > div {
+    margin: 20px;
+    text-align: center;
+}
+
+#icons > div > p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+

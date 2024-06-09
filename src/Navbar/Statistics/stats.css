@@ -1,0 +1,50 @@
+#stats {
+    font-family: Arial, sans-serif;
+
+    padding: 20px;
+}
+
+#title {
+    text-align: Left;
+}
+
+.stat-item {
+    margin: 20px 0;
+}
+
+.progress-container {
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 50vw;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 2s ease-in-out;
+    background-color: #131794;
+    width: 0; /* Initial width */
+    border-radius: 25px;
+}
+
+.progress-bar.dsa {
+    width: 76%;
+}
+
+.progress-bar.webdev {
+    width: 59%;
+}
+
+.progress-bar.linear-algebra {
+    width: 95%;
+}
+
+.progress-bar.data-analysis {
+    width: 71%;
+}
+
+.stat-item div{
+    font-size: 1.3rem;
+}
