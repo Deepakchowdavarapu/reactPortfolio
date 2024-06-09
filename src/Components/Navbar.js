@@ -21,7 +21,7 @@ function Navbar() {
 
       <div className="navbar-logo">
 
-        <h1>Deepak PORTFOLIO</h1>
+        <h1>PORTFOLIO</h1>
         </div>
       <ul className="navbar-list">
 
@@ -40,11 +40,11 @@ function Navbar() {
             <BsCodeSlash /> Project
           </Link>
         </li>
-        <li className="navbar-item" onClick={hideMenu}>
+        {/* <li className="navbar-item" onClick={hideMenu}>
           <Link to="/Resume">
             <CgFileDocument /> Resume
           </Link>
-        </li>
+        </li> */}
         <li className="navbar-item" onClick={hideMenu}>
           <Link to="/Skills">
             <CgFileDocument /> Skills
