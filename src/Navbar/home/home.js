@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'; // Correctly import useEffect and useState
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './home.css';
-import profilePhoto from '../../profilephoto.jpg'; // Correctly import the image
+import profilePhoto from '../../profilephoto.jpg';
 
 const Home = () => {
   const text = ["Web Developer", "Learner", "Designer", "Backend Developer"];
@@ -8,7 +9,8 @@ const Home = () => {
   const deletingSpeed = 50;
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const [textIndex, setTextIndex] = useState(0); 
+  const [textIndex, setTextIndex] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleTyping = () => {
@@ -33,18 +35,24 @@ const Home = () => {
     return () => clearTimeout(timerId);
   }, [displayedText, isDeleting, textIndex, text, typingSpeed, deletingSpeed]);
 
+  const handleButtonClick = () => {
+    navigate('/contact');
+  };
+
   return (
     <section id="home">
       <div id="info">
         <img src={profilePhoto} alt="Deepak CH" className="profile-photo" />
-        <div className="text-info"> 
+        <div className="text-info">
           <h1>Deepak CH</h1>
           <h3>{displayedText} |</h3>
-          <button id="reach-out-button">Know more</button>
+          <button id="reach-out-button" onClick={handleButtonClick}>
+            Know more
+          </button>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Home;
